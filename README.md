@@ -26,17 +26,16 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```
-   git clone [repository-url]
-   cd [project-directory]
+   git clone https://github.com/ShehabCoder/UserCarsAPI or see in mail the source code
+   cd Jar&PostMan collections
    ```
 
 2. Set up MongoDB:
-   - Start MongoDB service
-   - Create a new database named `car_search_db`
+   - Start MongoDB compas
    - The following collections will be created automatically:
      - `USER_CARS`
      - `CAR_MODELS`
-     - `USERS`
+     - `USERS` [when registering a User]
 
 3. Set up Redis:
    - Start Redis server
@@ -51,7 +50,10 @@ You have two options to run the application:
 
 1. Using the JAR file:
    ```
-   java -jar app/app/target/app-0.0.1-SNAPSHOT.jar
+   java -jar app/Jar&PostMan collections
+   ```
+   ```
+   for First Search on /api/search, you will see a Log Cache is Missing this because Redis [will obtain the data for the second search] 
    ```
 
 2. Through your IDE:
@@ -87,8 +89,8 @@ You have two options to run the application:
 
 ### 3. Search User Cars API
 - **Endpoint:** `GET /api/search`
-- **Input:** Query parameters (firstName, lastName, carPlateNumber)
-- **Authentication:** Required (use token from login API)
+- **Input:** Query parameters (firstName, lastName, car plate number)
+- **Authentication:** Required (use the token from login API)
 
 ## 💾 Data Models
 
@@ -114,4 +116,4 @@ If you encounter any issues or need clarification, please don't hesitate to cont
 
 ---
 
-📬 For any questions or support, please reach out to [your-email@example.com](mailto:your-email@example.com)
+📬 For any questions or support, please reach out to [shehabcoder@gmail.com](mailto:shehabcoder@gmail.com)
