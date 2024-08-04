@@ -50,10 +50,11 @@ You have two options to run the application:
 
 1. Using the JAR file:
    ```
-   java -jar app/Jar&PostMan collections
+   - got to posman collection and import it in folder app/Jar&PostMan
+   - run the app using this command  -> java -jar app-0.0.1-SNAPSHOT
    ```
    ```
-   for First Search on /api/search, you will see a Log Cache is Missing this because Redis [will obtain the data for the second search] 
+   ⏳**Note** : for First Search on /api/search, you will see a Log Cache is Missing this because Redis [will obtain the data for the second search] 
    ```
 
 2. Through your IDE:
