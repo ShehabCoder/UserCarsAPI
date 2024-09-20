@@ -25,6 +25,8 @@ public class CarInfoService {
         this.carService = carService;
     }
 
+
+
     @Cacheable(value = "carInfoCache", key = "#firstName + '_' + #secondName + '_' + #carPlateNumber", unless = "#result.isEmpty()")
     public List<CarInfo> getCarInfoList(String firstName, String secondName, String carPlateNumber) {
         logger.info("Cache miss. Fetching car info for: {} {} {}", firstName, secondName, carPlateNumber);
